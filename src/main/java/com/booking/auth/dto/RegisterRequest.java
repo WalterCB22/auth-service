@@ -1,5 +1,6 @@
 package com.booking.auth.dto;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -16,6 +17,7 @@ public class RegisterRequest {
     @NotBlank(message = "Password is required")
     private String password;
 
+    @JsonAlias("full_name")
     @NotBlank(message = "Full name is required")
     private String fullName;
 }
