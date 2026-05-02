@@ -125,8 +125,6 @@ public class AuthRESTService {
                 .username(user.getUsername())
                 .email(user.getEmail())
                 .fullName(user.getFullName())
-                .userId(user.getId())
-                .businessId(user.getBusinessId())
                 .roles(roleNames)
                 .build();
     }
